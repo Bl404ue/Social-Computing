@@ -7,7 +7,7 @@ hownet_dict = OpenHowNet.HowNetDict()
 hownet_dict_advanced = OpenHowNet.HowNetDict(init_sim=True)
 # OpenHowNet.download()
 
-f = codecs.open("C:\\Users\\Sun Mengyuan\\Desktop\\外卖评论(1).csv", "r", "utf-8")
+f = codecs.open("C:\\Users\\Sun Mengyuan\\Desktop\\外卖评论.csv", "r", "utf-8")
 lines = f.readlines()
 
 list_p = ["好吃", "可口", "很棒", "方便", "美味", "满意"]
@@ -75,5 +75,3 @@ for c in res_aa:
 f.close()
 
 f.close()
-test = hownet_dict.calculate_word_similarity("好", "坏")
-print("test:" + str(test))
